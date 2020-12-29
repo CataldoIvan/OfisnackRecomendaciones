@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
     .card{
         display: inline-block;
@@ -71,32 +72,14 @@
         bottom: 10px;
 
     } 
+    #imgDialogo{
+        position: absolute;
+    }
     .mensajito{
-        display: inline-block;
-    height: 221px;
-    width: 302px;
-    border: 9px solid #229ebb;
-    font-family: arial;
-    border-radius: 13% 21% 14% 25%;
-    padding: 27px;
-    background: #229ebb;
-    transform: rotate(9deg);
+        position: relative;
+    }
+
    
-    }
-    .mensajito p{
-    background-color: #229ebb;
-    color: white;
-    margin: 0px;
-    height: 100%;
-    font-size: 1.25rem;
-    line-height: 120%;
-    border-radius: 18% 16% 37% 29%;
-    transform: rotate(-8deg);
-    margin-top: 8%;
-    font-style: italic;
-    font-weight: bold;
-    
-    }
     
 </style>
 <body class="container">
@@ -110,7 +93,8 @@
             
 
             <div class="mensajito" >
-                <p >
+                <img src="/burbuja de dialogo.svg" alt="" id="imgDialogo">
+                <p   >
                     La mayoría de las personas
                     dice que consumir
                     snacks saludables
@@ -119,12 +103,14 @@
                     y emocional (70%) como
                     para su bienestar físico.
                 </p>
+                <div class="hola"></div>
             </div>
         
        
         <div class="card" >
             <div class="base">
                 <p class="header-card">
+                    
                     <img src="comillasArriba.png" class="comillArriba" alt="">
                     <img src="naranjaLogo.png" class="logoNaranja" alt="">
                 </p>
@@ -210,6 +196,6 @@
 
     </div>
 
-    
+    <img src="/burbuja de dialogo.svg" alt="">
 </body>
 </html>
